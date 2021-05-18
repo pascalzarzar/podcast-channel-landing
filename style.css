@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 * {
     margin:0;
@@ -14,24 +14,18 @@ html {
 }
 
 section {
-    padding: 5em 0em;
+    padding-bottom: 5em;
 }
 
 /*navbar*/
-
-.container2 {
-    width: 90%;
-    padding: 2em 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2em 0;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .logo img {
@@ -51,16 +45,17 @@ li {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-}
-
 #toggleMenu {
     display:none;
 }
 
 #menu {
     display: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
 }
 
 a:hover {
@@ -73,6 +68,7 @@ a:hover {
 
 .heroSection {
     height: 75vh;
+    padding: 5em 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,13 +79,8 @@ a:hover {
     width: 80%;
 }
 
-.textWrapper {
-    width: 60%;
-    margin-bottom: 5em;
-}
-
 h1 {
-    font-size: 6.4rem;
+    font-size: 6.2rem;
     font-weight: 400;
     margin-bottom: 0.5em;
 }
@@ -138,17 +129,16 @@ button:hover {
 
 h2 {
     font-size: 4.8rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 1em;
 }
 
-.episodeSection h2 {
+.whiteh2 {
     color: white;
 }
 
 .contentContainer {
     width: 90%;
-    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -162,10 +152,6 @@ h2 {
 
 /*De dónde venimos*/
 
-.fromSection h2 {
-    color: #060A24;
-}
-
 .fromSection .container {
     display: flex;
     justify-content: space-between;
@@ -178,7 +164,7 @@ h2 {
     z-index: 10;
 }
 
-/*De dónde venimos*/
+/*Invitadas Estelares*/
 
 .pictures {
     display: flex;
@@ -201,7 +187,9 @@ h2 {
 }
 
 h3 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1em;
 }
 
 .themeWrapper {
@@ -241,17 +229,7 @@ h3 {
     text-align: center;
 }
 
-.callToAction h2 {
-    color: white;
-}
-
 /*footer*/
-
-.nav {
-    padding: 2em 0;
-    margin: 0 auto;
-    width: 90%;
-}
 
 .nav p {
     font-size: 1.6rem;
@@ -261,7 +239,6 @@ h3 {
 
 .footerIcons  {
     display: flex;
-    height: 100%;
 }
 
 .footerIcons i{
@@ -373,7 +350,7 @@ h3 {
 
     .contentContainer iframe {
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: -1em;
     }
 
 /*From Where*/
@@ -384,7 +361,7 @@ h3 {
 
     .fromSection img {
         width: 80vw;
-        margin-top: -20em;
+        margin-top: -18em;
         margin-bottom: 3em;
     }
 
@@ -402,8 +379,8 @@ h3 {
     width: 50%;
 }
 
-h3 {
-    font-size: 1.6rem;
+.theme img {
+    width: 70%;
 }
 
 /*footer*/
@@ -430,21 +407,21 @@ h3 {
 
 @media screen and (max-width:600px) {
     
-h1 {
-    font-size: 3.6rem;
-}
+    h1 {
+        font-size: 3.6rem;
+    }
 
-/*Invitados*/
+    /*Invitados*/
 
-.pictures img {
-    width: 100%;
-}
+    .pictures img {
+        width: 100%;
+    }
 
-/*Invitados*/
+    /*Invitados*/
 
-.themeWrapper {
-    flex-direction: column;
-}
+    .themeWrapper {
+        flex-direction: column;
+    }
 
 }
 
